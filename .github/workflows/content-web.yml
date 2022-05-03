@@ -73,8 +73,8 @@ jobs:
       uses: azure/k8s-deploy@v1
       with:
         manifests: |
-          web.deployment.yml
-          web.service.yml
+          web.deployment.yaml
+          web.service.yaml
         images: |
           ${{ env.containerRegistry }}/${{ env.imageRepository }}:${{ env.tag }}
         imagepullsecrets: |
